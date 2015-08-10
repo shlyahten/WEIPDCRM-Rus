@@ -1,50 +1,34 @@
 # WEIPDCRM #
 Darwin Cydia Repository Manager
 
-This is an open source Repository Manager for Saurik's Cydia™ Clients.  
-This program is re-designed from tibounise's "[DCRM](https://github.com/tibounise/DCRM)", and we add almost 95% functions for a wonderful repository.
+Это панель управления репозиторием с открытм исходным кодом для Saurik's Cydia™.  
+Эта программа - ремэйк "[DCRM](https://github.com/tibounise/DCRM)", и мы добавили около 95% функций в эту замечательную панель.
 
-##Online View:
+##Посмотреть онлайн:
+0.  http://cydia.shlyahten.ru - w/ Russian
 1.  http://apt.82flex.com
 2.  http://apt.touchsprite.com
 3.  http://apt.phoneai.cn
 4.  http://cydia.so
 5.  http://cydia.minwenlsm.pw
 
-##Requirements:
-1. PHP Version >= 5.3 and MySQL
-2. GD and BZ2 supports
-3. Nginx, Apache or Lighttpd
+##Системные требования:
+1. PHP Version >= 5.3 и MySQL
+2. Поддержка GD и BZ2
+3. Nginx, Apache или Lighttpd
 
-##How To Install And Use:
-1.  Upload `/main/*` to your wwwroot then give them read & write privileges.
-2.  **Nginx:** Move `/readme.files/dcrm_nginx.conf` to Nginx's config directory, then include it in your website's config.<br/>**Lighttpd:** Include `/readme.files/dcrm_lighttpd.conf`.
-3.  Restart your web server if you need.
-4.  Open `http://{YOUR_REPO_URL}/install` to pre-config and install DCRM.
-5.  Then login at `http://{YOUR_REPO_URL}/manage`.
-6.  Fill blanks in `http://{YOUR_REPO_URL}/manage/settings.php` and `http://{YOUR_REPO_URL}/manage/release.php`
-7.  Upload a package then import it or replace an older version, then you can edit its information *(such as Identifier, Author, Name, Depends, etc.)*.
-8.  Edit the information of packages freely, click the title of each column and it will be autofilled. WEIPDCRM has a well organized depiction page, and you can add screenshots by clicking the title of a package.
-9.  Click "*Show this package*" or "*Hide this package*" to make a package visible or not.
-10.  When all is prepared, click the "*Build*" button at the right-top.
+##Установка и использование:
+1.  Загрузите содержимое `/main/*` в свой wwwroot (корень) затем дайте файлам разрешения на чтение и запись (CHMOD).
+2.  **Nginx:** Скопируйте `/readme.files/dcrm_nginx.conf` в Nginx's директорию с настройками, затем включите в конфигурацию сайта.<br/>**Lighttpd:** Включите `/readme.files/dcrm_lighttpd.conf`.
+3.  Перезагрузите сервер если это требуется.
+4.  Откройте `http://{YOUR_REPO_URL}/install` для преднастройки и установки DCRM.
+5.  Затем войдите `http://{YOUR_REPO_URL}/manage`.
+6.  Заполните пустые поля `http://{YOUR_REPO_URL}/manage/settings.php` и `http://{YOUR_REPO_URL}/manage/release.php`
+7.  Загрузите deb пакет и импортируйте его либо замените старую версию новой, теперь вы можете изменять информацию *(такую как Identifier, Author, Name, Depends, etc.)*.
+8.  Свободно изменяйте пакет, нажимайте на заголовок каждого поля и он заполнится автоматически. WEIPDCRM имеет хорошую страницу описания, и вы можете добавить туда скриншотов нажав на заголовок пакета.
+9.  Нажмите "*Показать пакет*" или "*Скрыть пакет*" чтобы сделать его видимым или нет.
+10.  Когда всё готово, нажмите "*Пересобрать*" в правом верхнем углу.
 11.  Add your repository in Cydia™.
-
-##How To Upgrade
-####1.5 Pro or latter
-Just upload files you get to replace. Then visit your repository homepage. It will auto update the database and configuration.
-####Earlier than 1.5 Pro
-Upload and replace files without `init` directory, `config.inc.php` and `connect.php` to Site Directory.
-Depending on the order execution database commands from `update.log`.
-
-##Donations
-WEIPDCRM Basic and WEIPDCRM Pro are both free software, but you can donate to support the developer.
-
-**82Flex:** http://82flex.com/about
-
-**Hintay:**  
-Paypal: [![Paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ljf120%40gmail%2ecom&item_name=Hintay&item_number=WEIPDCRM&no_note=0&currency_code=USD)  
-Alipay: [<img width="90" alt="Alipay" src="https://i.alipayobjects.com/i/ecmng/png/201405/2hsDKdMEqL.png">](http://blog.kugeek.com/go/alipay.html)
-
 
 ##License
 Copyright © 2013-2015 Zheng Wu & Hintay
